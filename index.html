@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<meta name="robots" content="noindex">
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terra.com</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        h2 {
+            font-family: Garamond, cursive;
+            font-size: 34px;
+            color: #fff
+        }
+        header {
+            background-color: #271D3B;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #6F6AB0;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            font-family: Perpetua, serif;
+            color: #FFFFFF;
+            text-decoration: none;
+            text-align: center;
+            padding: 10px 35px;
+            font-size: 19.3px;
+        }
+        section {
+            padding: 10px;
+            background-color: #5A83A4;
+        }
+        footer {
+            font-family: Perpetua, serif;
+            background-color: #6F6AB0;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        button {
+            background-color: #aec6cf;
+            color: #333;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #88b7b5;
+        }
+   
+        p {
+            font-family: Lucida Bright, sans-serif;
+            color: #e6e6e6;
+        }
+        h1 {
+            font-family: Lucida Bright, sans-serif;
+            font-size: 20px;
+            color: #e6e6e6;
+        }
+        h3 {
+            font-family: Lucida Bright, sans-serif;
+            font-size: 16px;
+            color: #e6e6e6;
+        }
+        .descripcion, .imagen {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .imagen {
+            margin-right: 0;
+        }
+        .imagen img {
+            width: 100%;
+            max-width: 300px;
+            height: auto; 
+        }
+        .productos {
+           display: flex;
+           flex-wrap: wrap;
+           gap: 20px;
+           justify-content: center;
+       }
+       .producto {
+          background-color: #fff;
+           border: 1px solid #ddd;
+           border-radius: 8px;
+           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+           max-width: 250px;
+           text-align: center;
+           padding: 10px;
+       }
+       .producto img {
+           max-width: 100%;
+           border-radius: 8px;
+       }
+       .producto p {
+           margin: 10px 0 0;
+       }
+
+        #contactForm {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+        }
+
+        #contactForm label {
+            display: block;
+            margin-bottom: 10px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #333;
+        }
+
+        #contactForm input[type="text"],
+         #contactForm input[type="email"],
+         #contactForm input[type="submit"],
+         #contactForm textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            box-sizing: border-box;
+            }
+
+         #contactForm input[type="text"],
+         #contactForm input[type="email"],
+         #contactForm textarea {
+            background-color: #e9f5ff;
+            }
+
+        #contactForm input[type="submit"] {
+            background-color: #4CAF50; 
+            color: white;
+            cursor: pointer;
+        }
+
+        #contactForm input[type="submit"]:hover {
+        background-color: #45a049; 
+        }
+</style>
+</head>
+
+<body>
+
+  <header>
+    <img src="
+    https://i.pinimg.com/736x/2e/08/42/2e0842bf0e416a5bcb020f9e3bf2b383.jpg"
+    alt="Logo de Terra.com" width="200"> 
+  </header>
+
+   <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#productos">Productos</a>
+    <a href="#contact">Contáctenos</a>
+   </nav>
+    
+  <section id="inicio">
+    <h2>Inicio</h2>
+    <p>¡Bienvenido a Terra.com!</p>
+    <p>En Terra.com, nos enorgullece ofrecerte una experiencia de entrega a 
+       domicilio única. Somos más que una empresa de entregas; somos una 
+       plataforma que conecta a consumidores con una variedad de productos de 
+       alta calidad provenientes de pequeñas empresas locales de alimentos.</p>
+    <p>Nuestro enfoque innovador nos permite almacenar cuidadosamente una 
+       amplia gama de productos en nuestras bodegas, desde deliciosas 
+       conservas hasta tentadores productos envasados, listos para ser 
+       entregados directamente a tu puerta. Explora nuestro catálogo y 
+       descubre lo que Terra.com tiene reservado para ti.</p>
+  </section>
+    
+   <section id="nosotros">
+    <h2>Nosotros</h2>
+    <p>En Terra.com, estamos comprometidos con la promoción y el apoyo a las 
+        pequeñas empresas locales de alimentos. Nuestra misión es ofrecer una 
+        plataforma que no solo brinde conveniencia a los clientes, sino que 
+        también impulse el crecimiento y la visibilidad de los productores 
+        artesanales.</p>
+     <p>Con bodegas estratégicamente ubicadas y un equipo dedicado, nos 
+       esforzamos por ofrecer un servicio de entrega rápido y confiable 
+       mientras ayudamos a las empresas emergentes a llegar a nuevos clientes. 
+       Creemos en el poder de la comunidad y estamos orgullosos de ser un puente 
+       entre los consumidores y los apasionados productores de alimentos 
+       locales.</p>
+   </section>
+    
+   <section id="productos" style="justify-content: center;align-items: center; text-align: center; padding: 10px;">
+    
+    <h2>Productos</h2>
+        <div class="productos">
+        <div class="producto">
+            <img src="https://image.made-in-china.com/201f0j00aSKoVblnlDcv/Conveniente-f-cil-Abrir-OEM-439g-latas-de-frijol-blanco-enlatado-del-ri-n.webp"
+                alt="Producto 1">
+            <p style="color: black;">Fríjoles Enlatados 200gr, Marca "Román"</p>
+        </div>
+        <div class="producto">
+            <img src="https://www.anchoasdeluxe.com/2407-superlarge_default/mermelada-de-fresas-220g.jpg"
+                alt="pProducto 2">
+                <p style="color: black;">“Mermelada Artesanal 250gr, Marca "Der Grosse”</p>
+        </div>
+        <div class="producto">
+            <img src="https://img.freepik.com/fotos-premium/flor-cordyceps-doble-coccion-sopa-pollo-servida-tazon-aislado-vista-lateral-mesa_689047-2497.jpg"
+                alt="Producto 3">
+                <p style="color: black;">Sopa Instantánea 80gr, Marca "EFECTIVA"</p>
+        </div>
+        <div class="producto">
+            <img src="https://d2yoo3qu6vrk5d.cloudfront.net/pulzo-lite/images-resized/PP2792237A-s-o.webp"
+                alt="Producto 4">
+                <p style="color: black;">Atún Saborizado 120gr, Marca "Atunados"</p>
+        </div>
+        </div>
+
+   </section>
+
+   <section id="contact">
+    <h2 style="text-align: center;">Contáctenos</h2>
+        <form id="contactForm">
+            <label for="name" style="font-family: Lucida Bright, sans-serif;">Nombre:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email" style="font-family: Lucida Bright, sans-serif;">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="subject" style="font-family: Lucida Bright, sans-serif;">Asunto:</label>
+            <input type="text" id="subject" name="subject" required><br>
+
+            <label for="message" style="font-family: Lucida Bright, sans-serif;">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea><br>
+
+            <input type="submit" value="Enviar datos" style="font-family: Lucida Bright, sans-serif; background-color: #6F6AB0;">
+    </form>
+</section>
+  
+   <footer>
+    <p style="font-family: Perpetua, serif; color: #fff;">Oficinas de TERRA.COM - Dirección: Calle 183c #17-52 Bis, 
+       Bogotá - Teléfono: 601-3057890 - +57 301675893  - 
+       Correo: info@terra.com.co</p>
+   </footer>
+    
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+   <script src="script.js"></script>
+
+</body>
