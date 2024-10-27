@@ -1,5 +1,4 @@
-
-document.getElementById('contactForm').addEventListener('submit', function(event) {
+document.getElementById('contactForm').addEventListener('submit', async function(event) {
     event.preventDefault();
 
     const name = document.getElementById('name').value;
@@ -9,22 +8,39 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
     if (name.length < 2 || subject.length < 2 || message.length < 2) {
         alert('Por favor, asegúrate de que todos los campos tengan al menos 2 caracteres.');
-        event.preventDefault();
+        return;
     }
 
     const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     if (!emailPattern.test(email)) {
         alert('Por favor, introduce una dirección de correo válida.');
-        event.preventDefault();
+        return;
     }
 
-    const data = [
-        { Nombre: name, "Correo Electrónico": email, Asunto: subject, Mensaje: message }
-    ];
+    const formData = {
+        name,
+        email,
+        subject,
+        message
+    };
 
-    const worksheet = XLSX.utils.json_to_sheet(data);
-    const workbook = XLSX.utils.book_new();
-    XLSX.utils.book_append_sheet(workbook, worksheet, "Contactos");
+    try {
+        await fetch('http://localhost:3000/enviar-correo', { // Cambia esta URL al endpoint de tu servidor
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(formData)
+        });
+        alert('Formulario enviado exitosamente');
+    } catch (error) {
+        console.error('Error al enviar el formulario', error);
+        alert('Hubo un error al enviar el formulario. Intenta nuevamente.');
+    }
 
-    XLSX.writeFile(workbook, "contactos.xlsx");
+    function mostrarSeccion(id) {
+        document.querySelectorAll('.seccion').forEach(seccion => {
+            seccion.classList.remove('activa');
+        });
+        document.getElementById(id).classList.add('activa');
+    }
 });
+

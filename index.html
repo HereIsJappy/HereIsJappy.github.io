@@ -154,6 +154,16 @@
         #contactForm input[type="submit"]:hover {
         background-color: #45a049; 
         }
+
+        .seccion {
+        display: none;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+    .activa {
+        display: block;
+        opacity: 1;
+    }
 </style>
 </head>
 
@@ -165,14 +175,14 @@
     alt="Logo de Terra.com" width="200"> 
   </header>
 
-   <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#nosotros">Nosotros</a>
-    <a href="#productos">Productos</a>
-    <a href="#contact">Contáctenos</a>
-   </nav>
+  <nav>
+    <a href="#" onclick="mostrarSeccion('inicio')">Inicio</a>
+    <a href="#" onclick="mostrarSeccion('nosotros')">Nosotros</a>
+    <a href="#" onclick="mostrarSeccion('productos')">Productos</a>
+    <a href="#" onclick="mostrarSeccion('contact')">Contáctenos</a>
+</nav>
     
-  <section id="inicio">
+<section id="inicio" class="seccion activa">
     <h2>Inicio</h2>
     <p>¡Bienvenido a Terra.com!</p>
     <p>En Terra.com, nos enorgullece ofrecerte una experiencia de entrega a 
@@ -186,7 +196,7 @@
        descubre lo que Terra.com tiene reservado para ti.</p>
   </section>
     
-   <section id="nosotros">
+  <section id="nosotros" class="seccion">
     <h2>Nosotros</h2>
     <p>En Terra.com, estamos comprometidos con la promoción y el apoyo a las 
         pequeñas empresas locales de alimentos. Nuestra misión es ofrecer una 
@@ -201,7 +211,7 @@
        locales.</p>
    </section>
     
-   <section id="productos" style="justify-content: center;align-items: center; text-align: center; padding: 10px;">
+   <section id="productos" style="justify-content: center;align-items: center; text-align: center; padding: 10px;" class="seccion">
     
     <h2>Productos</h2>
         <div class="productos">
@@ -229,7 +239,7 @@
 
    </section>
 
-   <section id="contact">
+   <section id="contact" class="seccion">
     <h2 style="text-align: center;">Contáctenos</h2>
         <form id="contactForm">
             <label for="name" style="font-family: Lucida Bright, sans-serif;">Nombre:</label>
@@ -249,9 +259,9 @@
 </section>
   
    <footer>
-    <p style="font-family: Perpetua, serif; color: #fff;">Oficinas de TERRA.COM - Dirección: Calle 183c #17-52 Bis, 
+    <p style="font-family: Perpetua, serif; color: #fff;">Oficinas de TERRA.COM - Dirección: Calle 174 #7A-26, 
        Bogotá - Teléfono: 601-3057890 - +57 301675893  - 
-       Correo: info@terra.com.co</p>
+       Correo: terra.com.empresa@gmail.com -  Instagram: terra.com.empresa</p>
    </footer>
     
    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
