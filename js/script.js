@@ -1,3 +1,10 @@
+function mostrarSeccion(id) {
+    document.querySelectorAll('.seccion').forEach(seccion => {
+        seccion.classList.remove('activa');
+    });
+    document.getElementById(id).classList.add('activa');
+}
+
 document.getElementById('contactForm').addEventListener('submit', async function(event) {
     event.preventDefault();
 
@@ -35,12 +42,6 @@ document.getElementById('contactForm').addEventListener('submit', async function
         console.error('Error al enviar el formulario', error);
         alert('Hubo un error al enviar el formulario. Intenta nuevamente.');
     }
-
-    function mostrarSeccion(id) {
-        document.querySelectorAll('.seccion').forEach(seccion => {
-            seccion.classList.remove('activa');
-        });
-        document.getElementById(id).classList.add('activa');
-    }
 });
+
 
